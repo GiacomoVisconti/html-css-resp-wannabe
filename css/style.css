@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     color: #b8c1ec;
     background: #232946;
 }
@@ -46,6 +46,7 @@ img {
  ************************************************/
 
 /* LAYOUT */
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -127,3 +128,31 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+/* *MOBILE */
+@media screen and (max-width: 479px) {
+    body {
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .row {
+            flex-direction: column;
+
+            width: 100%;
+            .col {
+                width: 100%;
+            }
+            h1,
+            h2 {
+                text-align: center;
+                display: inline-block;
+            }
+            .card {
+                padding-top: 10px;
+            }
+        }
+    }
+}
